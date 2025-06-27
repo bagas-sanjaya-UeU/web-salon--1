@@ -13,12 +13,12 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('services') }}">Layanan</a>
                 </li>
-                <li class="nav-item">
+                {{-- <li class="nav-item">
                     <a class="nav-link" href="#about">Tentang</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#contact">Kontak</a>
-                </li>
+                </li> --}}
                 @if (Auth::check())
 
 

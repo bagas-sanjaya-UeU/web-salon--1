@@ -1,7 +1,7 @@
 <!-- Menu -->
 
 <aside id="layout-menu" class="layout-menu menu-vertical menu bg-menu-theme">
-    <div class="app-brand demo " style="background-color: #13b5dd !important">
+    <div class="app-brand demo " style="background-color:rgb(19, 221, 177) !important">
         <a href="{{ route('dashboard') }}" class="app-brand-link">
 
             <span class="app-brand-text demo menu-text fw-bolder ms-2"

@@ -57,6 +57,8 @@
                                                 <label for="price" class="form-label">Harga</label>
                                                 <input type="number" min="0" class="form-control" id="price"
                                                     name="price">
+                                                    <p>Tips: Tambah min 5K Sebagai PPN pada saat set Harga</p>
+                                                    <p>Cth: Harga layanan 50.000 + 5.000 Jadi 55.000</p>
                                             </div>
                                             <div class="mb-3">
                                                 <label for="is_home_service" class="form-label">Home Service</label>
@@ -66,6 +68,7 @@
                                                     <option value="0">Tidak</option>
                                                 </select>
                                             </div>
+
                                     </div>
                                     <div class="modal-footer">
                                         <button type="button" class="btn btn-secondary"

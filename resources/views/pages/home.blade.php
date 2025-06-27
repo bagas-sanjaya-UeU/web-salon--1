@@ -60,7 +60,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6 mb-4 mb-md-0">
-                    <img src="https://images.unsplash.com/photo-1633681926035-ec1ac984418a?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+                    <img src="/assets/img/backgrounds/background_salon2.jpeg" class="img-fluid rounded"
                         class="img-fluid rounded" alt="Tentang Salon">
                 </div>
                 <div class="col-md-6">
