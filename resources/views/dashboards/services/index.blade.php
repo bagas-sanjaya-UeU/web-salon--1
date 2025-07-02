@@ -108,7 +108,7 @@
                                             </td>
                                             <td>{{ $service->service_name }}</td>
                                             <td>{!! $service->description !!}</td>
-                                            <td>{{ $service->price }}</td>
+                                            <td>Rp{{ number_format($service->price) }}</td>
                                             <td>{{ $service->is_home_service ? 'Ya' : 'Tidak' }}</td>
 
                                             <td>

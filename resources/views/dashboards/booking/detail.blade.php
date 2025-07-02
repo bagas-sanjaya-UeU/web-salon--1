@@ -105,6 +105,27 @@
             </div>
         </div>
 
+        <!-- Form dropdown ubah status pembayaran -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h5 class="card-title">Ubah Status Pembayaran</h5>
+                <form action="{{ route('dashboard.booking-menu.updatePaymentStatus', $booking->id) }}" method="POST">
+                    @csrf
+                    @method('PATCH')
+                    <div class="form-group">
+                        <label for="payment_status">Status Pembayaran</label>
+                        <select name="status" id="payment_status" class="form-control">
+                            <option value="unpaid" {{ $booking->payment_status == 'unpaid' ? 'selected' : '' }}>Belum Dibayar
+                            </option>
+                            <option value="paid" {{ $booking->payment_status == 'paid' ? 'selected' : '' }}>Sudah Dibayar
+                            </option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3">Ubah Status Pembayaran</button>
+                </form>
+            </div>
+        </div>
+
         <div class="mt-4">
             <a href="{{ route('dashboard.bookings.index') }}" class="btn btn-primary">Kembali</a>
         </div>

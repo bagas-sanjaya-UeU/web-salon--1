@@ -63,8 +63,8 @@ class WebhookController extends Controller
                 } else {
                     $booking = Booking::find($payment->booking_id);
                     if ($booking) {
-                        $booking->update(['payment_status' => 'paid', 'status' => 'completed']);
-                        Log::info('Booking status updated to completed', ['booking' => $booking]);
+                        $booking->update(['payment_status' => 'paid', 'status' => 'comfirmed']);
+                        Log::info('Booking status updated to confirmed', ['booking' => $booking]);
                     }
                     $payment->payment_status = 'paid'; // Pembayaran berhasil
                 }
@@ -72,8 +72,8 @@ class WebhookController extends Controller
             case 'settlement':
                 $booking = Booking::find($payment->booking_id);
                 if ($booking) {
-                    $booking->update(['payment_status' => 'paid', 'status' => 'completed']);
-                    Log::info('Booking status updated to completed', ['booking' => $booking]);
+                    $booking->update(['payment_status' => 'paid', 'status' => 'confirmed']);
+                    Log::info('Booking status updated to confirmed', ['booking' => $booking]);
                 }
                 $payment->payment_status = 'paid'; // Pembayaran berhasil
                 Log::info('Payment status updated to pending', ['payment' => $payment]);

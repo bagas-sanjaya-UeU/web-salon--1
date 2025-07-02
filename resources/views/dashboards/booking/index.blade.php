@@ -97,7 +97,7 @@
                                             </td>
 
                                             <td>
-                                                @if ($booking->payment_status == 'paid' && $booking->status == 'confirmed')
+                                                @if ($booking->payment_status == 'paid' && (($booking->status == 'confirmed' || $booking->status == 'completed') && !$booking->worker_id))
                                                     <!-- Button trigger modal -->
                                                     <button type="button" class="btn btn-primary mb-2"
                                                         data-bs-toggle="modal"

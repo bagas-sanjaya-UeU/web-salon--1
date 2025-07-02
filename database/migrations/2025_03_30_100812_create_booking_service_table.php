@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('booking_id')->constrained()->onDelete('cascade');
             $table->foreignId('service_id')->constrained()->onDelete('cascade');
-            $table->decimal('price', 8, 2); // harga layanan saat dipesan
+            $table->bigInteger('price')->default(0); // Use bigInteger for price
             $table->timestamps();
         });
     }

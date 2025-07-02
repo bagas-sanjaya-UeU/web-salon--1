@@ -21,10 +21,10 @@ return new class extends Migration
             $table->datetime('booking_date');
             $table->string('booking_time');
             $table->enum('status', ['pending', 'confirmed', 'canceled', 'completed', 'refunded'])->default('pending');
-            $table->decimal('total_price', 10, 2);
+            $table->bigInteger('total_price')->default(0);
             $table->boolean('home_service')->default(false);
             $table->float('distance')->nullable();
-            $table->decimal('shipping_fee', 8, 2)->nullable();
+            $table->bigInteger('shipping_fee')->default(0);
             $table->enum('payment_status', ['paid', 'unpaid'])->default('unpaid');
             $table->enum('cancel_status', ['requested', 'approved', 'rejected'])->nullable();
             $table->timestamps();

@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('image')->nullable();
             $table->string('service_name');
             $table->text('description')->nullable();
-            $table->decimal('price', 8, 2);
+            $table->bigInteger('price')->default(0); // Use bigInteger for price
             $table->boolean('is_home_service');
             $table->timestamps();
         });

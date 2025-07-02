@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->foreignId('booking_id')->constrained()->onDelete('cascade');
             $table->datetime('payment_date');
-            $table->decimal('payment_amount', 10, 2);
+            $table->bigInteger('payment_amount')->default(0); // Use bigInteger for payment amount
             $table->string('payment_method');
             $table->enum('payment_status', ['paid', 'unpaid'])->default('unpaid');
             $table->string('midtrans_order_id')->nullable();

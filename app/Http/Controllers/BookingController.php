@@ -449,4 +449,25 @@ class BookingController extends Controller
         }
     }
 
+    public function ubahStatusPembayaran(Request $request, $id)
+    {
+        $booking = Booking::findOrFail($id);
+
+        $request->validate([
+            'status' => 'required|in:paid,unpaid',
+        ]);
+
+        if ($booking->payment_status === $request->status) {
+            return back()->with('error', 'Status pembayaran sudah sesuai.');
+        }
+
+        if ($request->status === 'paid') {
+            $booking->update(['payment_status' => 'paid', 'status' => 'confirmed']);
+        } else {
+            $booking->update(['payment_status' => 'unpaid', 'status' => 'pending']);
+        }
+
+        return back()->with('success', 'Status booking berhasil diubah.');
+    }
+
 }

@@ -116,8 +116,9 @@
         // Misal: -6.26222430306444, 106.52494354240288 (Jakarta)
 
         // Ganti dengan koordinat toko Anda
-        const tokoLat = -6.26222430306444; // koordinat toko
-        const tokoLng = 106.52494354240288; // koordinat toko
+        
+        const tokoLat = -6.259472586574895; // koordinat toko
+        const tokoLng = 106.46676207733233; // koordinat toko
         let hargaPerKm = 2000; // harga per km
         let leafletMap; // buat map global agar gak di-inisialisasi dua kali
 

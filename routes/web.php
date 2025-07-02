@@ -120,6 +120,7 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('/booking/checkout/service', [BookingController::class, 'checkoutAdmin'])->name('booking.admin.checkout');
         Route::post('/dashboard/create-booking', [BookingController::class, 'manualCheckoutProcess'])->name('dashboard.checkout.process');
 
+        Route::patch('/dashboard/change-payment-status/{id}/update', [BookingController::class, 'ubahStatusPembayaran'])->name('dashboard.booking-menu.updatePaymentStatus');
         
         Route::get('/dashboard/cart', [CartController::class, 'cartDashboard'])->name('cart.admin.index');
 

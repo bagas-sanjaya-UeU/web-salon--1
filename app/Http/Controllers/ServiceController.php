@@ -25,7 +25,7 @@ class ServiceController extends Controller
     {
         $validated = $request->validate([
             'service_name' => 'required|string',
-            'price' => 'required|numeric',
+            'price' => 'required|string',
             'description' => 'required|string',
             'is_home_service' => 'required|boolean',
             'image' => 'required|image|mimes:jpeg,png,jpg|max:2048',
@@ -41,6 +41,12 @@ class ServiceController extends Controller
             // Simpan nama file ke database
             $validated['image'] = $imageName;
         }
+
+        $validated['price'] = preg_replace('/[^\d]/', '', $validated['price']);
+        
+        
+       
+        
 
         Service::create($validated);
 
@@ -58,7 +64,7 @@ class ServiceController extends Controller
     {
         $validated = $request->validate([
             'service_name' => 'required|string',
-            'price' => 'required|numeric',
+            'price' => 'required|string',
             'description' => 'required|string',
             'is_home_service' => 'required|boolean',
             'image' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
@@ -84,7 +90,7 @@ class ServiceController extends Controller
             // Tetap pakai gambar lama
             $validated['image'] = $service->image;
         }
-
+        $validated['price'] = preg_replace('/[^\d]/', '', $validated['price']);
         // Update service
         $service->update($validated);
 
