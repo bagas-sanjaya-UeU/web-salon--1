@@ -29,6 +29,11 @@
                                     <p class="service-price">Rp. {{ number_format($service->price, 0, ',', '.') }}</p>
                                 @endif
                                 <p class="service-description">{!! $service->description !!}</p>
+                                <p class="service-type">
+                                    <strong>Jenis Layanan:</strong>
+                                    {{ $service->is_home_service ? 'Home Service' : 'Layanan di Tempat' }}
+                                </p>
+                                
                                 @if (Auth::check())
                                     @if ($service->is_in_cart)
                                         <a href="{{ route('cart.index') }}" class="btn btn-add-cart"><i

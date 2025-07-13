@@ -87,7 +87,7 @@
                 <!-- Kiri: Info Salon -->
                 <div class="col-md-6">
                     <h4 class="mb-3">SHELLA BEAUTY SALON</h4>
-                    <p><i class="bi bi-geo-alt-fill me-2"></i>Jalan Mawar No. 12, Cikupa, Tangerang</p>
+                    <p><i class="bi bi-geo-alt-fill me-2"></i>Jl.aria jaya santika, rt.03 rw.05, dekat lapangan semeru, Kab. Tangerang, Tigaraksa, Banten. Tangerang.</p>
                     <p><i class="bi bi-telephone-fill me-2"></i>+62 812-3456-7890</p>
                     <p><i class="bi bi-envelope-fill me-2"></i>shellasalon@gmail.com</p>
 
@@ -108,11 +108,7 @@
                 <!-- Kanan: Maps -->
                 <div class="col-md-6">
                     <div class="ratio ratio-4x3 rounded shadow">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.8122343736544!2d106.51707307416727!3d-6.242350561167901!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69ff6e07f301c3%3A0xabcabcabcabcabc!2sCikupa%2C%20Tangerang!5e0!3m2!1sid!2sid!4v161234567890!5m2!1sid!2sid"
-                            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d426.0385295621095!2d106.46645689557832!3d-6.259593940794181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sJl.aria%20jaya%20santika%2C%20rt.03%20rw.05%2C%20dekat%20lapangan%20semeru%2C%20Kab.%20Tangerang%2C%20Tigaraksa%2C%20Banten.%20Tangerang.!5e1!3m2!1sid!2sid!4v1751807227104!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
             </div>

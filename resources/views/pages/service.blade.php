@@ -20,6 +20,8 @@
                                     {{ // Format harga sesuai kebutuhan
                                         number_format($service->price, 0, ',', '.') }}</strong>
                             </p>
+                            <p class="card-text">
+                                <small class="text-muted">{{ $service->is_home_service ? 'Layanan Home Service' : 'Layanan di Tempat' }}</small>
                         </div>
                         <div class="card-footer bg-transparent border-0">
                             <a href="{{ route('services.detail', $service->id) }}" class="btn btn-custom">Lihat Detail</a>
